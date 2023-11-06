@@ -7,7 +7,7 @@ export default function Home() {
       <div className='flex flex-row gap-10'>
         <Link
           href={'/tw'}
-          className=' border-2 border-black px-10 py-5 rounded-2xl hover:bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500 hover:text-white transition-all'
+          className='border-2 border-black px-10 py-5 rounded-2xl hover:bg-gradient-to-r hover:from-twice-pink-500 hover:to-yellow-500 hover:text-white transition-all'
         >
           <h1 className='text-6xl'>Twice</h1>
         </Link>
