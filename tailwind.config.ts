@@ -14,7 +14,9 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'twice-pink': '#c4bdb7',
+        apricot: '#FCC89B',
+        fluomagenta: '#FF5FA2',
+        fearlessblue: '#719CFF',
       },
     },
   },
