@@ -9,6 +9,7 @@
 .bars-container {
   @apply h-[14.250px] sm:h-[19.953px] md:h-[29.930px] lg:h-[39.195px] w-[20rem] sm:w-[28rem] md:w-[42rem] lg:w-[55rem] relative flex flex-col items-center;
 }
+
 .bar-common {
   @apply absolute h-[14.250px] sm:h-[19.953px] md:h-[29.930px] lg:h-[39.195px] origin-center rounded-sm box-content;
 }
