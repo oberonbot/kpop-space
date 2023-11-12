@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Draggable from '../../../components/draggable';
 import './style.css';
 
 const inter = Inter({ subsets: ['latin'] });

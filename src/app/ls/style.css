@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ls-title {
+  @apply text-[3.1rem] font-bold sm:text-[4.4rem] md:text-[6.6rem] lg:text-[8.6rem] animate-appear-1 select-none;
+}
+
+.bars-container {
+  @apply h-[14.250px] sm:h-[19.953px] md:h-[29.930px] lg:h-[39.195px] w-[20rem] sm:w-[28rem] md:w-[42rem] lg:w-[55rem] relative flex flex-col items-center;
+}
+.bar-common {
+  @apply absolute h-[14.250px] sm:h-[19.953px] md:h-[29.930px] lg:h-[39.195px] origin-center rounded-sm box-content;
+}
+
+.bar-draggable {
+  @apply bg-foreground cursor-pointer animate-appear;
+}
+
+.bar-target {
+  @apply bg-neutral-200 dark:bg-neutral-800;
+}
+
+.draggable-bar-0 {
+  @apply bar-common bar-draggable w-[17.16rem] sm:w-[24.02rem] md:w-[36.04rem] lg:w-[47.19rem]
+  rotate-[9deg] -translate-x-[1.53rem] sm:-translate-x-[2.05rem] md:-translate-x-[3.13rem] lg:-translate-x-[3.98rem];
+}
+.draggable-bar-1 {
+  @apply bar-common bar-draggable w-[17.16rem] sm:w-[24.02rem] md:w-[36.04rem] lg:w-[47.19rem]
+  rotate-[9deg] translate-x-[1.47rem] sm:translate-x-[2.1rem] md:translate-x-[3.07rem] lg:translate-x-[4.08rem];
+}
+.draggable-bar-2 {
+  @apply bar-common bar-draggable w-[9.88rem] sm:w-[13.83rem] md:w-[20.75rem] lg:w-[27.17rem]
+  rotate-[16deg] translate-x-[0.15rem] sm:translate-x-[0.23rem] md:translate-x-[0.35rem] lg:translate-x-[0.48rem];
+}
+.draggable-bar-3 {
+  @apply bar-common bar-draggable w-[3.86rem] sm:w-[5.40rem] md:w-[8.11rem] lg:w-[10.62rem]
+  rotate-[48deg] -translate-x-[1.3rem] sm:-translate-x-[1.8rem] md:-translate-x-[2.65rem] md:-translate-y-[0.05rem] lg:-translate-x-[3.5rem] lg:-translate-y-[0.05rem];
+}
+.draggable-bar-4 {
+  @apply bar-common bar-draggable w-[5.20rem] sm:w-[7.28rem] md:w-[10.92rem] lg:w-[14.30rem]
+  rotate-[32deg] translate-x-[0.73rem] sm:translate-x-[1rem] md:translate-x-[1.47rem] lg:translate-x-[1.86rem];
+}
+.draggable-bar-5 {
+  @apply bar-common bar-draggable w-[3.10rem] sm:w-[4.34rem] md:w-[6.51rem] lg:w-[8.53rem]
+  -rotate-[70deg] translate-x-[1.18rem] -translate-y-[0.15rem] sm:translate-x-[1.71rem] sm:-translate-y-[0.24rem] md:translate-x-[2.5rem] md:-translate-y-[0.35rem] lg:translate-x-[3.3rem] lg:-translate-y-[0.5rem];
+}
+.draggable-bar-6 {
+  @apply bar-common bar-draggable  w-[13.62rem] sm:w-[19.07rem] md:w-[28.60rem] lg:w-[37.45rem]
+  -rotate-[11.1deg] -translate-x-[3.2rem] sm:-translate-x-[4.47rem]  md:-translate-x-[6.78rem] lg:-translate-x-[8.88rem];
+}
+.draggable-bar-7 {
+  @apply bar-common bar-draggable  w-[13.10rem] sm:w-[18.34rem] md:w-[27.51rem] lg:w-[36.02rem]
+  -rotate-[11.65deg] -translate-x-[0.95rem] sm:-translate-x-[1.27rem] md:-translate-x-[2rem] lg:-translate-x-[2.6rem];
+}
+.draggable-bar-8 {
+  @apply bar-common bar-draggable  w-[12.70rem] sm:w-[17.78rem] md:w-[26.67rem] lg:w-[34.92rem]
+  -rotate-[12deg] translate-x-[1.13rem] -translate-y-[0.01rem] sm:translate-x-[1.5rem] sm:-translate-y-[0.02rem] md:translate-x-[2.17rem] lg:translate-x-[2.87rem] lg:-translate-y-[0.05rem];
+}
+.draggable-bar-9 {
+  @apply bar-common bar-draggable w-[13.08rem] sm:w-[18.31rem] md:w-[27.47rem] lg:w-[35.97rem]
+  -rotate-[11.3deg] translate-x-[3.48rem] -translate-y-[0.02rem] sm:translate-x-[4.92rem] sm:-translate-y-[0.08rem] md:translate-x-[7.38rem] lg:translate-x-[9.65rem] lg:-translate-y-[0.15rem];
+}
+
+.target-bar-0 {
+  @apply bar-common bar-target w-[17.16rem] sm:w-[24.02rem] md:w-[36.04rem] lg:w-[47.19rem] rotate-[9deg] -translate-x-[1.5rem] sm:-translate-x-[2.05rem] md:-translate-x-[3.1rem] lg:-translate-x-[4rem];
+}
+.target-bar-1 {
+  @apply bar-common bar-target w-[17.16rem] sm:w-[24.02rem] md:w-[36.04rem] lg:w-[47.19rem] rotate-[9deg] translate-x-[1.5rem] sm:translate-x-[2.1rem] md:translate-x-[3.1rem] lg:translate-x-[4.05rem];
+}
+.target-bar-2 {
+  @apply bar-common bar-target  w-[9.88rem] sm:w-[13.83rem] md:w-[20.75rem] lg:w-[27.17rem] rotate-[16deg] translate-x-[0.15rem] sm:translate-x-[0.2rem] md:translate-x-[0.35rem] lg:translate-x-[0.5rem];
+}
+.target-bar-3 {
+  @apply bar-common bar-target  w-[3.86rem] sm:w-[5.40rem] md:w-[8.11rem] lg:w-[10.62rem] rotate-[48deg] -translate-x-[1.3rem] sm:-translate-x-[1.8rem] md:-translate-x-[2.65rem] md:-translate-y-[0.05rem] lg:-translate-x-[3.5rem] lg:-translate-y-[0.05rem];
+}
+.target-bar-4 {
+  @apply bar-common bar-target w-[5.20rem] sm:w-[7.28rem] md:w-[10.92rem] lg:w-[14.30rem] rotate-[32deg] translate-x-[0.7rem] sm:translate-x-[1rem] md:translate-x-[1.5rem] lg:translate-x-[1.9rem];
+}
+.target-bar-5 {
+  @apply bar-common bar-target w-[3.10rem] sm:w-[4.34rem] md:w-[6.51rem] lg:w-[8.53rem] -rotate-[70deg] translate-x-[1.18rem] -translate-y-[0.15rem] sm:translate-x-[1.68rem] sm:-translate-y-[0.24rem] md:translate-x-[2.5rem] md:-translate-y-[0.35rem] lg:translate-x-[3.3rem] lg:-translate-y-[0.5rem];
+}
+.target-bar-6 {
+  @apply bar-common bar-target w-[13.62rem] sm:w-[19.07rem] md:w-[28.60rem] lg:w-[37.45rem] -rotate-[11.1deg] -translate-x-[3.2rem] sm:-translate-x-[4.5rem]  md:-translate-x-[6.78rem] lg:-translate-x-[8.9rem];
+}
+.target-bar-7 {
+  @apply bar-common bar-target w-[13.10rem] sm:w-[18.34rem] md:w-[27.51rem] lg:w-[36.02rem] -rotate-[11.65deg] -translate-x-[0.95rem] sm:-translate-x-[1.3rem] md:-translate-x-[2rem] lg:-translate-x-[2.6rem];
+}
+.target-bar-8 {
+  @apply bar-common bar-target w-[12.70rem] sm:w-[17.78rem] md:w-[26.67rem] lg:w-[34.92rem] -rotate-[12deg] translate-x-[1.1rem] -translate-y-[0.01rem] sm:translate-x-[1.5rem] sm:-translate-y-[0.02rem] md:translate-x-[2.2rem] lg:translate-x-[2.9rem] lg:-translate-y-[0.05rem];
+}
+.target-bar-9 {
+  @apply bar-common bar-target w-[13.08rem] sm:w-[18.31rem] md:w-[27.47rem] lg:w-[35.97rem] -rotate-[11.3deg] translate-x-[3.45rem] -translate-y-[0.02rem] sm:translate-x-[4.95rem] sm:-translate-y-[0.08rem] md:translate-x-[7.35rem] lg:translate-x-[9.65rem] lg:-translate-y-[0.15rem];
+}
